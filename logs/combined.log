@@ -53,3 +53,33 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:20:43 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
 {"ip":"::ffff:127.0.0.1","level":"warn","message":"Bot request blocked","path":"/favicon.ico","service":"acquisitions-api","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:20:43 +0000] \"GET /favicon.ico HTTP/1.1\" 403 68 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"deniedReason":{"allowed":[],"denied":["POSTMAN"],"spoofed":false,"type":"BOT","verified":false},"ip":"::ffff:127.0.0.1","level":"warn","message":"Bot request blocked","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:40:07 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"deniedReason":{"allowed":[],"denied":["POSTMAN"],"spoofed":false,"type":"BOT","verified":false},"ip":"::ffff:127.0.0.1","level":"warn","message":"Bot request blocked","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:40:38 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"deniedReason":{"allowed":[],"denied":["POSTMAN"],"spoofed":false,"type":"BOT","verified":false},"ip":"::ffff:127.0.0.1","level":"warn","message":"Bot request blocked","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:40:38 +0000] \"GET /favicon.ico HTTP/1.1\" 403 68 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"deniedReason":{"allowed":[],"denied":["POSTMAN"],"spoofed":false,"type":"BOT","verified":false},"ip":"::ffff:127.0.0.1","level":"warn","message":"Bot request blocked","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:41:15 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"deniedReason":{"allowed":[],"denied":["POSTMAN"],"spoofed":false,"type":"BOT","verified":false},"ip":"::ffff:127.0.0.1","level":"warn","message":"Bot request blocked","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:41:20 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"deniedReason":{"allowed":[],"denied":["POSTMAN"],"spoofed":false,"type":"BOT","verified":false},"ip":"::ffff:127.0.0.1","level":"warn","message":"Bot request blocked","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:41:20 +0000] \"GET /favicon.ico HTTP/1.1\" 403 68 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:48:06 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:48:12 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:48:12 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:55:32 +0000] \"GET /health HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:55:34 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:55:36 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:55:38 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:55:39 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:55:41 +0000] \"GET /health HTTP/1.1\" 429 61 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:55:43 +0000] \"GET /health HTTP/1.1\" 429 61 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:58:43 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:58:45 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:58:47 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:58:48 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:58:50 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:58:51 +0000] \"GET /health HTTP/1.1\" 429 61 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:58:53 +0000] \"GET /health HTTP/1.1\" 429 61 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Mar/2026:18:59:07 +0000] \"GET /health HTTP/1.1\" 429 61 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
