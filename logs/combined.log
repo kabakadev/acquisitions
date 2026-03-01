@@ -1,0 +1,36 @@
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisition!","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: contact@email.com","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"error","message":"Error creating user: ReferenceError: password_hash is not defined","service":"acquisitions-api"}
+{"level":"error","message":"Signup error password_hash is not defined","service":"acquisitions-api","stack":"ReferenceError: password_hash is not defined\n    at createUser (file:///home/iankabaka/projects/acquisitions-clean/src/services/auth.service.js:28:40)\n    at async signup (file:///home/iankabaka/projects/acquisitions-clean/src/controllers/auth.controller.js:20:18)"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","message":"User contactian@email.com created successfully","service":"acquisitions-api"}
+{"level":"error","message":"Signup error error is not defined","service":"acquisitions-api","stack":"ReferenceError: error is not defined\n    at Object.sign (file:///home/iankabaka/projects/acquisitions-clean/src/utils/jwt.js:13:56)\n    at signup (file:///home/iankabaka/projects/acquisitions-clean/src/controllers/auth.controller.js:22:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"error","message":"Error creating user: Error: Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: IanK,contactian@email.com,$2b$10$wIHZMFmvwaG9GhfrG4X08uoL.xoqZkQWIuzsSlNGjvz3HsgHh4zWe,admin","service":"acquisitions-api"}
+{"cause":{"code":"23505","constraint":"users_email_unique","detail":"Key (email)=(contactian@email.com) already exists.","file":"nbtinsert.c","line":"667","name":"NeonDbError","routine":"_bt_check_unique","schema":"public","severity":"ERROR","table":"users"},"level":"error","message":"Signup error Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: IanK,contactian@email.com,$2b$10$wIHZMFmvwaG9GhfrG4X08uoL.xoqZkQWIuzsSlNGjvz3HsgHh4zWe,admin","params":["IanK","contactian@email.com","$2b$10$wIHZMFmvwaG9GhfrG4X08uoL.xoqZkQWIuzsSlNGjvz3HsgHh4zWe","admin"],"query":"insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"","service":"acquisitions-api","stack":"Error: Failed query: insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\") values (default, $1, $2, $3, $4, default, default) returning \"id\", \"name\", \"email\", \"role\", \"created_at\"\nparams: IanK,contactian@email.com,$2b$10$wIHZMFmvwaG9GhfrG4X08uoL.xoqZkQWIuzsSlNGjvz3HsgHh4zWe,admin\n    at NeonHttpPreparedQuery.queryWithCache (file:///home/iankabaka/projects/acquisitions-clean/node_modules/drizzle-orm/pg-core/session.js:41:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async NeonHttpPreparedQuery.execute (file:///home/iankabaka/projects/acquisitions-clean/node_modules/drizzle-orm/neon-http/session.js:45:20)\n    at async createUser (file:///home/iankabaka/projects/acquisitions-clean/src/services/auth.service.js:26:23)\n    at async signup (file:///home/iankabaka/projects/acquisitions-clean/src/controllers/auth.controller.js:20:18)"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"info","message":"User iankabaka@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: iankabaka@gmail.com","service":"acquisitions-api"}
+{"level":"info","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: Failed query: select \"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\" from \"users\" where \"users\".\"email\" = $1 limit $2\nparams: iankabaka@gmail.com,1","service":"acquisitions-api"}
+{"cause":{"name":"NeonDbError","sourceError":{}},"level":"error","message":"Signin error Failed query: select \"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\" from \"users\" where \"users\".\"email\" = $1 limit $2\nparams: iankabaka@gmail.com,1","params":["iankabaka@gmail.com",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\" from \"users\" where \"users\".\"email\" = $1 limit $2","service":"acquisitions-api","stack":"Error: Failed query: select \"id\", \"name\", \"email\", \"password\", \"role\", \"created_at\", \"updated_at\" from \"users\" where \"users\".\"email\" = $1 limit $2\nparams: iankabaka@gmail.com,1\n    at NeonHttpPreparedQuery.queryWithCache (file:///home/iankabaka/projects/acquisitions-clean/node_modules/drizzle-orm/pg-core/session.js:41:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async NeonHttpPreparedQuery.execute (file:///home/iankabaka/projects/acquisitions-clean/node_modules/drizzle-orm/neon-http/session.js:45:20)\n    at async authenticateUser (file:///home/iankabaka/projects/acquisitions-clean/src/services/auth.service.js:27:20)\n    at async signin (file:///home/iankabaka/projects/acquisitions-clean/src/controllers/auth.controller.js:63:18)"}
+{"level":"info","message":"::1 - - [01/Mar/2026:13:44:27 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 500 1081 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"User iankabaka@gmail.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: iankabaka@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:13:50:34 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 108 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:13:51:13 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 29 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
