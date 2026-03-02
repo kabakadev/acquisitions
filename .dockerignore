@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.env
+.env.development
+.env.production
+.git
+.gitignore
+.neon_local
+README.md
+DOCKER.md
