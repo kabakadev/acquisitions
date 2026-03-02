@@ -17,6 +17,7 @@
     "dev": "node --watch src/index.js",
     "start": "node src/index.js",
     "dev:docker": "sh ./scripts/dev.sh",
+    "prod:docker": "sh ./scripts/prod.sh",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
