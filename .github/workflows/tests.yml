@@ -54,7 +54,7 @@ jobs:
           else
             echo "❌ Tests failed!" >> $GITHUB_STEP_SUMMARY
           fi
-          
+
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "#### Coverage Summary" >> $GITHUB_STEP_SUMMARY
           if [ -f "coverage/lcov-report/index.html" ]; then
