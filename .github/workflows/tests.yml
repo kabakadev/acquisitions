@@ -1,0 +1,71 @@
+name: Tests
+
+on:
+  push:
+    branches: [main, staging]
+  pull_request:
+    branches: [main, staging]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    env:
+      NODE_ENV: test
+      NODE_OPTIONS: --experimental-vm-modules
+      ARCJET_ENV: development # 👈 CRITICAL FIX: Stops Arcjet from crashing during tests
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/postgres
+      ARCJET_KEY: ${{ secrets.ARCJET_KEY || 'aj_test_key' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        id: run-tests
+        run: npm test -- --coverage
+        continue-on-error: true
+
+      # 👈 CRITICAL FIX: Moved this BEFORE the exit 1, and added if: always()
+      - name: Upload coverage reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 30
+
+      # 👈 CRITICAL FIX: Added if: always() so this runs even if tests fail
+      - name: Generate Step Summary
+        if: always()
+        run: |
+          echo "### Test Results 🚀" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.run-tests.outcome }}" == "success" ]; then
+            echo "✅ All tests passed!" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Tests failed!" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "#### Coverage Summary" >> $GITHUB_STEP_SUMMARY
+          if [ -f "coverage/lcov-report/index.html" ]; then
+            echo "Coverage report uploaded as artifact." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "No coverage report found." >> $GITHUB_STEP_SUMMARY
+          fi
+
+      # 👈 CRITICAL FIX: Fail the workflow at the very end
+      - name: Annotate and Fail
+        if: steps.run-tests.outcome == 'failure'
+        run: |
+          echo "::error::Tests failed. Please check the logs for details."
+          exit 1
