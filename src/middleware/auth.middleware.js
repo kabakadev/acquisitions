@@ -19,7 +19,7 @@ export const authenticateToken = (req, res, next) => {
   } catch (e) {
     return res
       .status(403)
-      .json({ message: 'Forbidden: Invalid or expired token' });
+      .json({ message: 'Forbidden: Invalid or expired token', e });
   }
 };
 
